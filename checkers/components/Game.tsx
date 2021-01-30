@@ -152,7 +152,6 @@ const CheckersComponent: React.FunctionComponent<GameProps<IState>> = (props: Ga
       state.error = e.message;
       const errorUpdate = {endMatchScores: move.endMatchScores, turnIndex: move.turnIndex, state: move.state};
       state.error = localize(e.message, appState);
-      console.log('error:', state.error, 'appstate:', appState);
       setMove(errorUpdate);
     }
   }
